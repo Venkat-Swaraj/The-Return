@@ -2133,6 +2133,7 @@ MonoBehaviour:
     a dense white fog. '
   actions:
   - {fileID: 11400000, guid: ac2e5f489198d1b4b9eaca71a9ae5138, type: 2}
+  - {fileID: 11400000, guid: a3d2a6ca0cb79e3418a81ea37774d574, type: 2}
 --- !u!1 &1693314543
 GameObject:
   m_ObjectHideFlags: 0
