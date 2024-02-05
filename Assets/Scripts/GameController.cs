@@ -31,8 +31,8 @@ public class GameController : MonoBehaviour
     public void DisplayLocation()
     {
         string description = player.currentLocation.description + "\n";
-        description += player.currentLocation.GetConnectionsText() + "";
-
+        description += player.currentLocation.GetConnectionsText();
+        description += player.currentLocation.GetItemsText();
         currentText.text = description;
     }
 

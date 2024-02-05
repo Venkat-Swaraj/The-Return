@@ -6,6 +6,8 @@ public class Player : MonoBehaviour
 {
     public Location currentLocation;
 
+    public List<Item> inventory = new List<Item>();
+
     // Start is called before the first frame update
     void Start()
     {

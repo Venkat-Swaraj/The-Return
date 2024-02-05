@@ -10,6 +10,9 @@ public class Location : MonoBehaviour
     public string description;
 
     public Connection[] connections;
+
+    public List<Item> items = new List<Item>();
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +37,26 @@ public class Location : MonoBehaviour
             
         }
         return connectionDescription;
+    }
+
+    public string GetItemsText()
+    {
+        if (items.Count == 0)
+            return "";
+        else
+        {
+            string itemDescription = "You see ";
+            bool first = true;
+            foreach (var item in items)
+            {
+                if (!first)
+                    itemDescription += " and ";
+                itemDescription += item.description;
+                first = false;
+            }
+            itemDescription += "\n";
+            return itemDescription;
+        }
     }
 
     public Connection GetConnection(string connectionNoun)
