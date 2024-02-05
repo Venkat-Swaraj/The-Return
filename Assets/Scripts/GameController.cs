@@ -13,7 +13,8 @@ public class GameController : MonoBehaviour
 
     [TextArea]
     public string introText;
-    // Start is called before the first frame update
+
+    public Action[] actions;
     void Start()
     {
         logText.text = introText;
@@ -21,7 +22,7 @@ public class GameController : MonoBehaviour
         textEntryField.ActivateInputField();
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         
@@ -63,6 +64,21 @@ public class GameController : MonoBehaviour
         /*TODO:
          Process Input into commands
          */
+        foreach(Action action in actions)
+        {
+            if(action.keyword == separateWords[0])
+            {
+                if(separateWords.Length>1)
+                {
+                    action.RespondToInput(this, separateWords[1]);
+                }
+                else
+                {
+                    action.RespondToInput(this, "");
+                }
+                return;
+            }
+        }
 
         currentText.text = "Nothing happens (Having Trouble? Type Help)";
     }

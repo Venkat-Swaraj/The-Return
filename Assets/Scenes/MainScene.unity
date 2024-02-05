@@ -819,7 +819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ShowMaskGraphic: 1
+  m_ShowMaskGraphic: 0
 --- !u!114 &554013164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2131,6 +2131,8 @@ MonoBehaviour:
 
     fades into
     a dense white fog. '
+  actions:
+  - {fileID: 11400000, guid: ac2e5f489198d1b4b9eaca71a9ae5138, type: 2}
 --- !u!1 &1693314543
 GameObject:
   m_ObjectHideFlags: 0
