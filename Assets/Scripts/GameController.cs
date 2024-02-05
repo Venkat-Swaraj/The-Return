@@ -34,4 +34,36 @@ public class GameController : MonoBehaviour
 
         currentText.text = description;
     }
+
+    public void TextEntered()
+    {
+        LogCurrentText();
+        ProcessInput(textEntryField.text);
+        textEntryField.text = "";
+        textEntryField.ActivateInputField() ;
+    }
+
+    void LogCurrentText()
+    {
+        logText.text += currentText.text;
+        logText.text += "\n\n";
+
+        logText.text += "<color=#aaccaaff>"+textEntryField.text+"</color>";
+        logText.text += "\n\n";
+
+
+    }
+
+    void ProcessInput(string input)
+    {
+        input = input.ToLower();
+        char[] delimitter = { ' ' };
+        string[] separateWords = input.Split(delimitter);
+
+        /*TODO:
+         Process Input into commands
+         */
+
+        currentText.text = "Nothing happens (Having Trouble? Type Help)";
+    }
 }
