@@ -49,10 +49,15 @@ public class Location : MonoBehaviour
             bool first = true;
             foreach (var item in items)
             {
-                if (!first)
-                    itemDescription += " and ";
-                itemDescription += item.description;
-                first = false;
+                if(item.itemEnabled)
+                {
+                    if (!first)
+                    {
+                        itemDescription += " and ";
+                    }
+                    itemDescription += item.description;
+                    first = false;
+                }
             }
             itemDescription += "\n";
             return itemDescription;

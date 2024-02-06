@@ -170,7 +170,7 @@ MonoBehaviour:
   itemName: staff
   description: A staff
   playerCanTake: 1
-  itemEnable: 1
+  itemEnabled: 1
 --- !u!1 &143145037
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,7 +374,7 @@ MonoBehaviour:
   itemName: serpent
   description: A Robed Ferryman
   playerCanTake: 0
-  itemEnable: 1
+  itemEnabled: 1
 --- !u!1 &210521627
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,17 +556,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   locationName: Chapel
   description: 'A dark ruined chapel. In the centre of a dark stone room a smashed
-    statue, the plinth and lower half
-
-    of a robed figure. In front of the statue
-    a deep well is carved into the rock. You are drawn to it.
-
-    Looking down the
-    well leads directly into the sea below, in the water you see piles of coins,
-    some
-
-    black with age some sparkling gold and silver in the light. A shape
-    swims through the water. '
+    statue, the plinth and lower half of a robed figure. In front of the statue a
+    deep well is carved into the rock. You are drawn to it. Looking down the well
+    leads directly into the sea below, in the water you see piles of coins, some
+    black with age some sparkling gold and silver in the light. A shape swims through
+    the water. '
   connections:
   - connectionName: North
     description: To the north a carved wooden door
@@ -584,7 +578,11 @@ MonoBehaviour:
     description: and an antechamber to the west.
     location: {fileID: 812566823}
     connectionEnabled: 1
-  items: []
+  items:
+  - {fileID: 316136327}
+  - {fileID: 1183099013}
+  - {fileID: 200091174}
+  - {fileID: 1701198908}
 --- !u!1 &312981156
 GameObject:
   m_ObjectHideFlags: 0
@@ -637,7 +635,8 @@ MonoBehaviour:
     description: 'West returns to the Chapel knave. '
     location: {fileID: 221358039}
     connectionEnabled: 1
-  items: []
+  items:
+  - {fileID: 613600133}
 --- !u!1 &316136325
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,9 +682,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: statue
-  description: "A stone statue, smashed at the waist.\r\r"
+  description: a stone statue, smashed at the waist
   playerCanTake: 0
-  itemEnable: 1
+  itemEnabled: 1
 --- !u!1 &373713326
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,7 +732,7 @@ MonoBehaviour:
   itemName: tapestry
   description: A Robed Ferryman
   playerCanTake: 0
-  itemEnable: 1
+  itemEnabled: 1
 --- !u!1 &381737321
 GameObject:
   m_ObjectHideFlags: 0
@@ -998,8 +997,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 77.34823}
-  m_SizeDelta: {x: -22, y: -176.69646}
+  m_AnchoredPosition: {x: 0, y: 112.92995}
+  m_SizeDelta: {x: -22, y: -247.8598}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &554013163
 MonoBehaviour:
@@ -1162,8 +1161,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 14
+  m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1273,7 +1272,7 @@ MonoBehaviour:
   itemName: head
   description: A smashed statue head
   playerCanTake: 0
-  itemEnable: 1
+  itemEnabled: 1
 --- !u!1 &616199734
 GameObject:
   m_ObjectHideFlags: 0
@@ -1321,7 +1320,7 @@ MonoBehaviour:
   itemName: ferryman
   description: A Robed Ferryman
   playerCanTake: 0
-  itemEnable: 1
+  itemEnabled: 1
 --- !u!1 &772740873
 GameObject:
   m_ObjectHideFlags: 0
@@ -1424,7 +1423,8 @@ MonoBehaviour:
     description: East returns to the Chapel knave.
     location: {fileID: 221358039}
     connectionEnabled: 1
-  items: []
+  items:
+  - {fileID: 373713328}
 --- !u!1 &818055469
 GameObject:
   m_ObjectHideFlags: 0
@@ -1563,9 +1563,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: tree
-  description: "A large tree\r"
+  description: A large tree
   playerCanTake: 0
-  itemEnable: 1
+  itemEnabled: 1
 --- !u!1 &1027807879
 GameObject:
   m_ObjectHideFlags: 0
@@ -2136,7 +2136,7 @@ MonoBehaviour:
   itemName: well
   description: An old stone well
   playerCanTake: 0
-  itemEnable: 1
+  itemEnabled: 1
 --- !u!1 &1229422426
 GameObject:
   m_ObjectHideFlags: 0
@@ -2489,7 +2489,8 @@ MonoBehaviour:
     description: 'returns to the chapel '
     location: {fileID: 221358039}
     connectionEnabled: 1
-  items: []
+  items:
+  - {fileID: 616199736}
 --- !u!1 &1680105503
 GameObject:
   m_ObjectHideFlags: 0
@@ -2544,30 +2545,32 @@ MonoBehaviour:
     sweat floods onto the cold shaking ground. Reborn in
     moss and dirt you take one gasping breath of
 
-    acrid smoke then another,
-    and another. You wretch and convulse awareness spreading feeling for
+    acrid smoke then another, and
+    another. You wretch and convulse awareness spreading feeling for
 
     breaks
     in muscle and bone, stretching out to fingers toes then retreating to slow a
     pounding heart.
 
-    Senses waking you feel the moss on your face the earth
-    in your mouth, aching trembling pushing
+    Senses waking you feel the moss on your face the earth in
+    your mouth, aching trembling pushing
 
-    up back onto your knees you open
-    your eyes.
+    up back onto your knees you open your
+    eyes.
 
-    Coming into focus dry roots wrap round sap covered arms you
-    tear them off wiping the dirt from
+    Coming into focus dry roots wrap round sap covered arms you tear them
+    off wiping the dirt from
 
-    yourself. You grab a lose branch and
-    use it to stand and prop yourself. In front of you the earth
+    yourself. You grab a lose branch and use it to
+    stand and prop yourself. In front of you the earth
 
-    fades into
-    a dense white fog. '
+    fades into a dense white
+    fog. '
   actions:
   - {fileID: 11400000, guid: ac2e5f489198d1b4b9eaca71a9ae5138, type: 2}
   - {fileID: 11400000, guid: a3d2a6ca0cb79e3418a81ea37774d574, type: 2}
+  - {fileID: 11400000, guid: 66a5c3de6c48f244b9d4e73b2d1944cb, type: 2}
+  - {fileID: 11400000, guid: bb58dc0f544d7d644b318ed62ef5d4b6, type: 2}
 --- !u!1 &1693314543
 GameObject:
   m_ObjectHideFlags: 0
@@ -2619,7 +2622,8 @@ MonoBehaviour:
     description: To the north is the rest of the Island
     location: {fileID: 1707944538}
     connectionEnabled: 1
-  items: []
+  items:
+  - {fileID: 939117418}
 --- !u!1 &1701198906
 GameObject:
   m_ObjectHideFlags: 0
@@ -2667,7 +2671,7 @@ MonoBehaviour:
   itemName: goldencoins
   description: Gold coins
   playerCanTake: 1
-  itemEnable: 0
+  itemEnabled: 0
 --- !u!1 &1707944536
 GameObject:
   m_ObjectHideFlags: 0
@@ -2888,8 +2892,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 84.182205}
-  m_SizeDelta: {x: -22, y: 150.3644}
+  m_AnchoredPosition: {x: 0, y: 120.67613}
+  m_SizeDelta: {x: -22, y: 223.3523}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1888236719
 MonoBehaviour:
@@ -2948,8 +2952,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 16
+  m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

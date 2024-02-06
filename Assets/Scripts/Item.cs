@@ -9,7 +9,7 @@ public class Item : MonoBehaviour
     [TextArea]
     public string description;
     public bool playerCanTake;
-    public bool itemEnable = true;
+    public bool itemEnabled = true;
     
     void Start()
     {
