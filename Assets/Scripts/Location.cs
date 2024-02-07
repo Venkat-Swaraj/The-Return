@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -76,5 +77,15 @@ public class Location : MonoBehaviour
             
         }
         return null;
+    }
+
+    internal bool HasItem(Item item)
+    {
+        foreach(Item item1 in items)
+        {
+            if(item == item1 && item1.itemEnabled)
+                return true;
+        }
+        return false;
     }
 }
